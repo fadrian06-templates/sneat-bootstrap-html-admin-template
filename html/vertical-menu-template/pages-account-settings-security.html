@@ -3125,7 +3125,7 @@
             document.addEventListener("DOMContentLoaded", c);
           else {
             var e = document.onreadystatechange || (() => {});
-            document.onreadystatechange = (b) => {
+            document.onreadystatechange = b => {
               e(b);
               "loading" !== document.readyState &&
                 ((document.onreadystatechange = e), c());
