@@ -4572,7 +4572,7 @@
       data-cf-beacon='{"version":"2024.11.0","token":"4105b1fe56d048e5b0d46d79e023b75b","r":1}'
       crossorigin="anonymous"></script>
     <script>
-      (function () {
+      (() => {
         function c() {
           var b =
             a.contentDocument || (a.contentWindow && a.contentWindow.document);
@@ -4597,8 +4597,8 @@
           else if (window.addEventListener)
             document.addEventListener("DOMContentLoaded", c);
           else {
-            var e = document.onreadystatechange || function () {};
-            document.onreadystatechange = function (b) {
+            var e = document.onreadystatechange || (() => {});
+            document.onreadystatechange = (b) => {
               e(b);
               "loading" !== document.readyState &&
                 ((document.onreadystatechange = e), c());

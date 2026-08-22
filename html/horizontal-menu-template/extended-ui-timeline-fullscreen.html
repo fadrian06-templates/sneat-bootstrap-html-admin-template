@@ -3539,7 +3539,7 @@
     <script src="../../assets/js/extended-ui-timeline.js"></script>
 
     <script>
-      (function () {
+      (() => {
         function c() {
           var b =
             a.contentDocument || (a.contentWindow && a.contentWindow.document);
@@ -3564,8 +3564,8 @@
           else if (window.addEventListener)
             document.addEventListener("DOMContentLoaded", c);
           else {
-            var e = document.onreadystatechange || function () {};
-            document.onreadystatechange = function (b) {
+            var e = document.onreadystatechange || (() => {});
+            document.onreadystatechange = (b) => {
               e(b);
               "loading" !== document.readyState &&
                 ((document.onreadystatechange = e), c());
