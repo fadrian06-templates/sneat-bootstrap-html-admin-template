@@ -18,6 +18,14 @@
     "bracketSameLine": true,
     "indentStyle": "space",
     "lineEnding": "lf",
-    "lineWidth": 80
+    "lineWidth": 80,
+    "trailingNewline": true
+  },
+  "css": {
+    "formatter": {
+      "delimiterSpacing": false,
+      "enabled": true,
+      "quoteStyle": "single"
+    }
   }
 }
