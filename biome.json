@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "includes": ["html/**/*.html"]
+  },
+  "html": {
+    "formatter": {
+      "enabled": true,
+      "indentScriptAndStyle": true,
+      "selfCloseVoidElements": "never",
+      "trailingNewline": true,
+      "whitespaceSensitivity": "ignore"
+    }
+  },
+  "formatter": {
+    "attributePosition": "auto",
+    "indentWidth": 2,
+    "bracketSameLine": true,
+    "indentStyle": "space",
+    "lineEnding": "lf",
+    "lineWidth": 80
+  }
+}
