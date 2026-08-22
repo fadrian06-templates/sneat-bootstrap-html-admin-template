@@ -45,7 +45,8 @@
       "lineWidth": 80,
       "operatorLinebreak": "before",
       "quoteProperties": "asNeeded",
-      "quoteStyle": "single"
+      "quoteStyle": "single",
+      "semicolons": "asNeeded"
     }
   }
 }
