@@ -3629,8 +3629,8 @@ Dear Queen Consolidated,
             var e = document.onreadystatechange || (() => {});
             document.onreadystatechange = b => {
               e(b);
-              "loading" !== document.readyState &&
-                ((document.onreadystatechange = e), c());
+              "loading" !== document.readyState
+                && ((document.onreadystatechange = e), c());
             };
           }
         }
