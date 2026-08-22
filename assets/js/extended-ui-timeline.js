@@ -1,1 +1,1 @@
-AOS.init({disable:function(){return window.innerWidth<1024},once:!0});
+AOS.init({ disable: () => window.innerWidth < 1024, once: !0 })

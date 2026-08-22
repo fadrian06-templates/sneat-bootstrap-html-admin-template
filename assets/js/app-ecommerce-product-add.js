@@ -1,4 +1,13 @@
-(()=>{(e=document.querySelector(".comment-editor"))&&new Quill(e,{modules:{toolbar:".comment-toolbar"},placeholder:"Product Description",theme:"snow"});(e=document.querySelector("#dropzone-basic"))&&new Dropzone(e,{previewTemplate:`<div class="dz-preview dz-file-preview">
+;(() => {
+  ;(e = document.querySelector('.comment-editor'))
+    && new Quill(e, {
+      modules: { toolbar: '.comment-toolbar' },
+      placeholder: 'Product Description',
+      theme: 'snow',
+    })
+  ;(e = document.querySelector('#dropzone-basic'))
+    && new Dropzone(e, {
+      previewTemplate: `<div class="dz-preview dz-file-preview">
 <div class="dz-details">
   <div class="dz-thumbnail">
     <img data-dz-thumbnail>
@@ -13,4 +22,62 @@
   <div class="dz-filename" data-dz-name></div>
   <div class="dz-size" data-dz-size></div>
 </div>
-</div>`,parallelUploads:1,maxFilesize:5,acceptedFiles:".jpg,.jpeg,.png,.gif",addRemoveLinks:!0,maxFiles:1});var e=document.querySelector("#ecommerce-product-tags"),e=(new Tagify(e),new Date),r=document.querySelector(".product-date");r&&r.flatpickr({monthSelectorType:"static",defaultDate:e})})(),$(function(){var s,o,e=$(".select2"),e=(e.length&&e.each(function(){var e=$(this);e.wrap('<div class="position-relative"></div>').select2({dropdownParent:e.parent(),placeholder:e.data("placeholder")})}),$(".form-repeater"));e.length&&(s=2,o=1,e.on("submit",function(e){e.preventDefault()}),e.repeater({show:function(){var a=$(this).find(".form-control, .form-select"),t=$(this).find(".form-label");a.each(function(e){var r="form-repeater-"+s+"-"+o;$(a[e]).attr("id",r),$(t[e]).attr("for",r),o++}),s++,$(this).slideDown(),$(".select2-container").remove(),$(".select2.form-select").select2({placeholder:"Placeholder text"}),$(".select2-container").css("width","100%"),$(".form-repeater:first .form-select").select2({dropdownParent:$(this).parent(),placeholder:"Placeholder text"}),$(".position-relative .select2").each(function(){$(this).select2({dropdownParent:$(this).closest(".position-relative")})})}}))});
+</div>`,
+      parallelUploads: 1,
+      maxFilesize: 5,
+      acceptedFiles: '.jpg,.jpeg,.png,.gif',
+      addRemoveLinks: !0,
+      maxFiles: 1,
+    })
+  var e = document.querySelector('#ecommerce-product-tags'),
+    e = (new Tagify(e), new Date()),
+    r = document.querySelector('.product-date')
+  r && r.flatpickr({ monthSelectorType: 'static', defaultDate: e })
+})(),
+  $(() => {
+    var s,
+      o,
+      e = $('.select2'),
+      e =
+        (e.length
+          && e.each(function () {
+            var e = $(this)
+            e.wrap('<div class="position-relative"></div>').select2({
+              dropdownParent: e.parent(),
+              placeholder: e.data('placeholder'),
+            })
+          }),
+        $('.form-repeater'))
+    e.length
+      && ((s = 2),
+      (o = 1),
+      e.on('submit', e => {
+        e.preventDefault()
+      }),
+      e.repeater({
+        show: function () {
+          var a = $(this).find('.form-control, .form-select'),
+            t = $(this).find('.form-label')
+          a.each(e => {
+            var r = 'form-repeater-' + s + '-' + o
+            $(a[e]).attr('id', r), $(t[e]).attr('for', r), o++
+          }),
+            s++,
+            $(this).slideDown(),
+            $('.select2-container').remove(),
+            $('.select2.form-select').select2({
+              placeholder: 'Placeholder text',
+            }),
+            $('.select2-container').css('width', '100%'),
+            $('.form-repeater:first .form-select').select2({
+              dropdownParent: $(this).parent(),
+              placeholder: 'Placeholder text',
+            }),
+            $('.position-relative .select2').each(function () {
+              $(this).select2({
+                dropdownParent: $(this).closest('.position-relative'),
+              })
+            })
+        },
+      }))
+  })

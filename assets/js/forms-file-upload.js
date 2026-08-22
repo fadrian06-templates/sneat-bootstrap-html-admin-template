@@ -1,4 +1,5 @@
-(()=>{var e=`<div class="dz-preview dz-file-preview">
+;(() => {
+  var e = `<div class="dz-preview dz-file-preview">
 <div class="dz-details">
   <div class="dz-thumbnail">
     <img data-dz-thumbnail>
@@ -13,4 +14,21 @@
   <div class="dz-filename" data-dz-name></div>
   <div class="dz-size" data-dz-size></div>
 </div>
-</div>`,a=document.querySelector("#dropzone-basic");a&&new Dropzone(a,{previewTemplate:e,parallelUploads:1,maxFilesize:5,addRemoveLinks:!0,maxFiles:1}),(a=document.querySelector("#dropzone-multi"))&&new Dropzone(a,{previewTemplate:e,parallelUploads:1,maxFilesize:5,addRemoveLinks:!0})})();
+</div>`,
+    a = document.querySelector('#dropzone-basic')
+  a
+    && new Dropzone(a, {
+      previewTemplate: e,
+      parallelUploads: 1,
+      maxFilesize: 5,
+      addRemoveLinks: !0,
+      maxFiles: 1,
+    }),
+    (a = document.querySelector('#dropzone-multi'))
+      && new Dropzone(a, {
+        previewTemplate: e,
+        parallelUploads: 1,
+        maxFilesize: 5,
+        addRemoveLinks: !0,
+      })
+})()

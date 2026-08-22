@@ -1,1 +1,1 @@
-new Plyr("#plyr-video-player"),new Plyr("#plyr-audio-player");
+new Plyr('#plyr-video-player'), new Plyr('#plyr-audio-player')
