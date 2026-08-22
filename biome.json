@@ -43,7 +43,9 @@
       "jsxQuoteStyle": "single",
       "lineEnding": "lf",
       "lineWidth": 80,
-      "operatorLinebreak": "before"
+      "operatorLinebreak": "before",
+      "quoteProperties": "asNeeded",
+      "quoteStyle": "single"
     }
   }
 }
