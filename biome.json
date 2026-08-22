@@ -20,7 +20,8 @@
     "lineEnding": "lf",
     "lineWidth": 80,
     "trailingNewline": true,
-    "bracketSpacing": true
+    "bracketSpacing": true,
+    "delimiterSpacing": false
   },
   "css": {
     "formatter": {
@@ -32,21 +33,14 @@
   "javascript": {
     "formatter": {
       "arrowParentheses": "asNeeded",
-      "attributePosition": "auto",
-      "bracketSameLine": true,
-      "bracketSpacing": true,
-      "delimiterSpacing": false,
       "enabled": true,
       "expand": "auto",
-      "indentStyle": "space",
-      "indentWidth": 2,
       "jsxQuoteStyle": "single",
-      "lineEnding": "lf",
-      "lineWidth": 80,
       "operatorLinebreak": "before",
       "quoteProperties": "asNeeded",
       "quoteStyle": "single",
-      "semicolons": "asNeeded"
+      "semicolons": "asNeeded",
+      "trailingCommas": "all"
     }
   }
 }
